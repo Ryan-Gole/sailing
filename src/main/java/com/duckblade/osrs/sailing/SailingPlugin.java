@@ -88,9 +88,6 @@ public class SailingPlugin extends Plugin
 	private SailingConfig config;
 
 	@Inject
-	private SailingOverlay sailingOverlay;
-
-	@Inject
 	private LuffOverlay luffOverlay;
 
 	@Inject
@@ -130,8 +127,6 @@ public class SailingPlugin extends Plugin
 		overlayManager.remove(seaChartOverlay);
 		eventBus.unregister(seaChartOverlay);
 		seaChartOverlay.shutDown();
-
-		overlayManager.remove(sailingOverlay);
 
 		cargoHolds.clear();
 	}
