@@ -34,7 +34,7 @@ public class SailingModule extends AbstractModule
 	Set<PluginLifecycleComponent> lifecycleComponents(
 		BarracudaTrialHelper barracudaTrialHelper,
 		BoatTracker boatTracker,
-		CargoHoldTracker cargoHoldTracker,
+//		CargoHoldTracker cargoHoldTracker,
 		DeprioSailsOffHelm deprioSailsOffHelm,
 		LuffOverlay luffOverlay,
 		PrioritizeCargoHold prioritizeCargoHold,
@@ -48,7 +48,7 @@ public class SailingModule extends AbstractModule
 		return ImmutableSet.of(
 			barracudaTrialHelper,
 			boatTracker,
-			cargoHoldTracker,
+//			cargoHoldTracker,
 			deprioSailsOffHelm,
 			luffOverlay,
 			prioritizeCargoHold,
