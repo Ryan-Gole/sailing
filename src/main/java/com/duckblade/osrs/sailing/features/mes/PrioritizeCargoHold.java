@@ -50,6 +50,11 @@ public class PrioritizeCargoHold
 			return;
 		}
 
+		if (client.getVarbitValue(VarbitID.SAILING_BOAT_FACILITY_LOCKEDIN) == FACILITY_HELM)
+		{
+			return;
+		}
+
 		Menu menu = client.getMenu();
 		menu.setMenuEntries(
 			Arrays.stream(menu.getMenuEntries())
